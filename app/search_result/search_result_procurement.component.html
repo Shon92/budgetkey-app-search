@@ -1,7 +1,11 @@
 <!-- <pre>{{item.source | json }}</pre> -->
-<div class="expense">
+
+<div [ngClass]="{
+    'expense':    true,
+    'exemptions':    item.type == 'exemptions',
+    'contractspending':    item.type == 'contractspending'}">
   <div class="search-result-type">
-    {{item.source.exemption_reason != '' ? 'רכש בפטור' : 'התקשרויות רכש' }}</div>
+    {{item.type == "exemptions" ? 'רכש בפטור' : 'התקשרויות רכש' }}</div>
   <div class="header row">
     <div class="col-md-8">
       <span class="meta"><strong>

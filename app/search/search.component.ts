@@ -132,7 +132,6 @@ export class SearchComponent implements OnInit {
       maxRecords = 11;
     } else if (this.displayDocs === 'all') {
       let result_arr = this.resultTotalCount;
-      // console.log(Object.keys(result_arr));
       let count_arr = Object.keys(result_arr)
         .map(key => {
           return result_arr[key];

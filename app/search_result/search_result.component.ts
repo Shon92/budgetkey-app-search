@@ -139,7 +139,6 @@ export class SearchResultProcurementComponent implements OnInit {
   titleText: string;
   indexesToHighlight: number[];
   isTitleTextMatched: boolean;
-
   constructor() { }
 
   ngOnInit() {

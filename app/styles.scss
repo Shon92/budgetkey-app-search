@@ -386,6 +386,48 @@ $expense-color-bg: #F3F8FD;
   }
 }
 
+$exemptions-color: #FF0000;
+$exemptions-color-secondary: #cc6666;
+$exemptions-color-bg: #0000FF;
+
+.exemptions{
+  // background: $exemptions-color-bg;
+  // border: 1px solid $exemptions-color-secondary;
+  .search-result-type{
+    background: $exemptions-color-secondary;
+  }
+  // .header {
+  //   .meta {
+  //     color: $exemptions-color-secondary;
+  //   }
+  //   .title {
+  //     // color: $exemptions-color;
+  //     }
+  //     span{
+  //       color: $exemptions-color-secondary;
+  //     }
+  //   }
+  //   .period {
+  //     color: $exemptions-color-secondary;
+  //   }
+  //   .amount {
+  //     // color:$exemptions-color;
+  //   }
+  // }
+  // .description {
+  //   border-color: $exemptions-color-secondary;
+  //   color: #797979;
+  //   .stamp {
+  //     border: 2px solid $exemptions-color-secondary;
+  //     span{
+  //       border-color: $exemptions-color-secondary;
+  //       color: $exemptions-color-secondary;
+
+  //     }
+  //   }
+  }
+
+
 $supports-color: #8A4838;
 $supports-color-secondary: #CEB9B5;
 $supports-color-bg: #FEFAF9;
