@@ -144,7 +144,7 @@ export class SearchComponent implements OnInit {
       this.skip += this.pageSize;
     } else if (this.pageSize + this.skip < maxRecords && maxRecords !== 0) {
       this.skip = maxRecords - this.pageSize;
-    } else if (this.resultCurrentCount[this.displayDocs] < 10 && this.resultCurrentCount[this.displayDocs]< maxRecords){
+    } else if (this.resultCurrentCount[this.displayDocs] < 10 && this.resultCurrentCount[this.displayDocs] < maxRecords) {
       this.skip = 0;
     } else {
       return Observable.of<SearchResults>(null);
