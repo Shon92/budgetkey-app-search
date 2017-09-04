@@ -1,7 +1,7 @@
 <!-- <pre>{{item.source | json }}</pre> -->
 <div [ngClass]="{
     'expense':      true,
-    'exemption': item.type == 'exemption',
+    'exemptions': item.type == 'exemptions',
     'contractspending':     item.type == 'contractspending'}" [ngSwitch]="item.type">
   <div class="search-result-type">
     {{item.type == 'contractspending' ? 'רכש בפטור' : 'התקשרויות רכש' }}</div>
@@ -17,12 +17,16 @@
         </span>
       <h3 class="title"><strong>התקשרויות עם ספק יחיד:</strong>
       <a *ngIf="valid_link" [attr.href]="entity_link" target="_blank">
-        <search-text-highlighter [titleText]="titleText" [indexesToHighlight]="indexesToHighlight" [isTitleTextMatched]="isTitleTextMatched"></search-text-highlighter> <span>{{item.source.supplier_code}}</span>
-        <!--{{item.source.supplier_name}} <span>{{item.source.supplier_code}}</span>-->
+        <search-text-highlighter [titleText]="titleText" [indexesToHighlight]="indexesToHighlight" [isTitleTextMatched]="isTitleTextMatched">
+        </search-text-highlighter> 
+        <!-- <span>{{item.source.supplier_code}}</span>
+        {{item.source.supplier_name}} -->
       </a>
       <a *ngIf="!valid_link">
-        <search-text-highlighter [titleText]="titleText" [indexesToHighlight]="indexesToHighlight" [isTitleTextMatched]="isTitleTextMatched"></search-text-highlighter> <span>{{item.source.supplier_code}}</span>
-        <!--{{item.source.supplier_name}} <span>{{item.source.supplier_code}}</span>-->
+        <search-text-highlighter [titleText]="titleText" [indexesToHighlight]="indexesToHighlight" [isTitleTextMatched]="isTitleTextMatched">
+        </search-text-highlighter>
+        <!-- <span>{{item.source.supplier_code}}</span>
+        {{item.source.supplier_name}}  -->
       </a>
       </h3>
     </div>
